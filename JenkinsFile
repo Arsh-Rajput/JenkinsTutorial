@@ -3,17 +3,17 @@ pipeline
     agent any
     stages
     {
-        stage{"scan"}
+        stage("scan")
             {
-                step
+                steps
                 {
                      echo 'Scanning the directory'
                 }
-                step
+                steps
                 {
                      echo 'Scanning the directory'
                 }
-                step
+                steps
                 {
                      echo 'Scanning the directory'
                 }
