@@ -24,6 +24,12 @@ pipeline {
                     params.sonarScan
                 }
             }
+            steps
+            {
+                echo 'Running Sonar Scans'
+            
+            }
+            
         }
         stage("test") {
             steps {
