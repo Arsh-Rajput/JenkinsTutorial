@@ -9,13 +9,18 @@ pipeline
                 {
                      echo 'Scanning the directory'
                 }
-                steps
+            }
+        stage("build")
+        {
+            steps
                 {
-                     echo 'Scanning the directory'
+                     echo 'Building the directory'
                 }
+         }
+          stage("test"){
                 steps
                 {
-                     echo 'Scanning the directory'
+                     echo 'testing the directory'
                 }
             }
      }
