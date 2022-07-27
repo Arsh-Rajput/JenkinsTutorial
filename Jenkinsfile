@@ -16,6 +16,15 @@ pipeline {
                 echo 'Building the directory'
             }
         }
+        stage("sonarScan")
+        {
+            when{
+                expression
+                {
+                    params.sonarScan
+                }
+            }
+        }
         stage("test") {
             steps {
                 echo 'testing the directory'
