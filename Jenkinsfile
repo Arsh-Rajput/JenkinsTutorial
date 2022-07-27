@@ -2,7 +2,7 @@ pipeline {
     agent any
     parameters
     {
-	booleanParam(name: "sonarScan",default: "true", description: "To run Sonar Scan on Project")
+	booleanParam(name: "sonarScan",defaultValue: "true", description: "To run Sonar Scan on Project")
     }
     stages
     {
